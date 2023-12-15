@@ -126,7 +126,11 @@ fun ScaffoldDemo(modifier: Modifier = Modifier) {
                              modifier.fillMaxWidth(),
                              contentAlignment = Alignment.Center
                              ){
-                             Text(text = "Deck Builder")
+                             Text(
+                                 text = "Deck Builder",
+                                 color = Color.Cyan,
+                                 fontWeight = FontWeight.ExtraBold
+                             )
                          }
                      },
 
@@ -223,6 +227,7 @@ fun ScaffoldDemo(modifier: Modifier = Modifier) {
              */
             Text(
                 text = items[bottomNavState].title,
+                color = Color.Blue,
                 fontWeight = FontWeight.ExtraBold,
                 fontSize = 44.sp
             )
